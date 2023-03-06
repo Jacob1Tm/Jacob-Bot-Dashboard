@@ -1,0 +1,83 @@
+body {
+    background-color: #2d2a2a;
+}
+
+#Title {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #ffffff;
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0.5em 0;
+}
+#Topbar {
+    position: static;
+    border: 1.5px solid #73AD21;
+    background-color: #3f3939;
+    color: #fff;
+    padding: 1.5em;
+    text-align: center;
+}
+#Topbar-Left {
+    float: left;
+    margin-top: -1.5em;
+}
+#Topbar-Right {
+    float: right;
+    margin-top: -1.5em;
+}
+a.text:nth-child(2) {
+    margin-left: 50px;
+}
+
+.text:link {
+    color: rgb(0, 255, 234);
+    background-color: transparent;
+    text-decoration: none;
+    font-size: 250%;
+}
+.text:visited {
+    color: rgb(0, 255, 234);
+    background-color: transparent;
+    text-decoration: none;
+    font-size: 250%;
+}
+
+.policy {
+    color: rgb(0, 255, 234);
+    background-color: transparent;
+    text-decoration: none;
+    font-size: 100%;
+}
+
+#cookie-notification {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    z-index: 9999;
+    backdrop-filter: blur(5px);
+}
+
+#cookie-notification button {
+    background-color: #fff;
+    color: #000;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+#cookie-notification button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+
+
+
+

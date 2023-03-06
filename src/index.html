@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard Jacob-Bota</title>
+</head>
+<!--import css-->
+<link rel="stylesheet" href="main.css">
+<body>
+<div id="Topbar">
+    <div id="Topbar-Left">
+        <a class="text" href="https://discord.com/api/oauth2/authorize?client_id=303050328918458368&permissions=412320394304&scope=applications.commands%20bot">Zaproś bota</a>
+        <a class="text" href="https://discord.gg/WBhQPFZrPM">Dołącz do serwera</a>
+    </div>
+    <div id="Topbar-Right">
+        <a class="text" href="/auth/discord">Zaloguj Się</a>
+    </div>
+</div>
+<div id="Title">
+    <h2>Witaj na stronie Jacob Bota</h2>
+
+    <a class="text" href="https://discord.com/api/oauth2/authorize?client_id=303050328918458368&permissions=412320394304&scope=applications.commands%20bot">Zaproś bota</a>
+</div>
+
+<div id="cookie-notification">
+    Ta strona używa plików cookies. Kliknij "Akceptuj", aby przejść do strony.
+    Po więcej informacji o użyciu cookies przejdź do <a class="policy" href="/privacy">polityki prywatności</a>.
+    <button id="cookie-accept">Akceptuj</button>
+</div>
+
+
+
+
+<script>
+    const cookieNotification = document.getElementById('cookie-notification');
+    const cookieAccept = document.getElementById('cookie-accept');
+
+    if (!localStorage.getItem('cookieAccepted')) {
+        cookieNotification.style.display = 'block';
+        document.body.style.overflow = 'hidden';
+    }
+
+    cookieAccept.addEventListener('click', () => {
+        cookieNotification.style.display = 'none';
+        document.body.style.overflow = 'auto';
+        localStorage.setItem('cookieAccepted', true);
+    });
+</script>
+
+</body>
+</html>
