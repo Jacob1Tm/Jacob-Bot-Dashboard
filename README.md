@@ -1,5 +1,5 @@
 # Jacob Bot Dashboard
-This is the dashboard for the Jacob Bot. It is a simple dashboard that allows you to change simple settings from web interface.
+This is the dashboard for the Jacob Bot. It is a simple dashboard that allows you to change simple settings from web interface.\
 (not functional yet)
 
 # TODO
